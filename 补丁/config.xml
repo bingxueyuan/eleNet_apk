@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.dev.dev" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://dev.apache.org/ns/1.0">
+    <name>设备查看器</name>
+    <description>
+        A sample Apache dev application that responds to the deviceready event.
+    </description>
+    <author email="dev@dev.apache.org" href="http://dev.io">
+        Apache dev Team
+    </author>
+    <content src="index.html" />
+    <plugin name="dev-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="res/icon/android/36.png" />
+        <icon density="mdpi" src="res/icon/android/48.png" />
+        <icon density="hdpi" src="res/icon/android/72.png" />
+        <icon density="xhdpi" src="res/icon/android/96.png" />
+        <icon density="xxhdpi" src="res/icon/android/144.png" />
+        <icon density="xxxhdpi" src="res/icon/android/192.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="android" spec="^7.0.0" />
+</widget>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>安卓设备界面</title>
+
+    <link href="include/metroUI/css/metro-all.min.css" rel="stylesheet">
+    <link href="include/c3/c3.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav data-role="ribbonmenu">
+    <ul class="tabs-holder">
+        <li><a class="static" href="#section-group-dev">设备</a></li>
+        <li><a href="#section-group-config">设置</a></li>
+        <li><a href="#section-group-about">关于</a></li>
+    </ul>
+
+    <div class="content-holder">
+        <div class="section" id="section-group-dev">
+            <div class="group">
+                <div data-role="buttonsGroup" data-cls-active="active">
+                    <button id="gui" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-meter"></span>
+                        </span>
+                        <span class="caption">界面</span>
+                    </button>
+                    <button id="ph" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-widgets"></span>
+                        </span>
+                        <span class="caption">PH</span>
+                    </button>
+                    <button id="pressure" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-widgets"></span>
+                        </span>
+                        <span class="caption">压力</span>
+                    </button>
+                    <button id="template" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-widgets"></span>
+                        </span>
+                        <span class="caption">温度</span>
+                    </button>
+                    <button id="speed" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-widgets"></span>
+                        </span>
+                        <span class="caption">转速</span>
+                    </button>
+                </div>
+                <span class="title fg-gray">就绪</span>
+            </div>
+        </div>
+
+        <div class="section" id="section-group-config">
+            <div class="group">
+                <div data-role="buttonsGroup" data-cls-active="active">
+                    <button id="ip" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-server"></span>
+                        </span>
+                        <span class="caption">IP</span>
+                    </button>
+                    <button id="token" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-server"></span>
+                        </span>
+                        <span class="caption">令牌</span>
+                    </button>
+                </div>
+                <span class="title fg-gray">就绪</span>
+            </div>
+        </div>
+
+        <div class="section" id="section-group-about">
+            <div class="group">
+                <div data-role="buttonsGroup" data-cls-active="active">
+                    <button id="about" class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-info"></span>
+                        </span>
+                        <span class="caption">说明</span>
+                    </button>
+                </div>
+                <span class="title fg-gray">就绪</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="dom" class="pt-2 pb-0 pl-2 pr-2">
+    <div id="panel" data-role="panel">
+        <div id="draw"></div>
+        <table id="table" class="table table-border cell-border">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>设备名称</th>
+                <th>设备信息</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>PH</td>
+                <td><canvas height="30" width="50" id="ph-val">null</canvas></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>压力</td>
+                <td><canvas height="30" width="50" id="pressure-val">null</canvas></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>温度</td>
+                <td><canvas height="30" width="50" id="template-val">null</canvas></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>转速</td>
+                <td><canvas height="30" width="50" id="speed-val">null</canvas></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<footer class="fixed-bottom">
+    <div data-role="panel">
+        <div class="float-right">
+            <span>V1.0.0.0</span>
+        </div>
+    </div>
+</footer>
+<script src="include/jquery-2.2.4.min.js"></script>
+<script src="include/metroUI/js/metro.min.js"></script>
+<script src="include/c3/d3.v5.min.js"></script>
+<script src="include/c3/c3.min.js"></script>
+<script src="include/jquery.cookie.js"></script>
+<script src="include/dom/default.js"></script>
+<script src="include/dom/draw.js"></script>
+
+<script>
+</script>
+
+
+</body>
+</html>
